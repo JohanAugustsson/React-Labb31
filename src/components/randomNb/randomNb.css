@@ -1,0 +1,43 @@
+.container-RandomNumberGame button{
+  padding: 5px;
+  margin: 1rem;
+  font-size: 1.2em;
+  border-radius: 5px;
+}
+.container-RandomNumberGame input{
+  padding: 5px;
+  margin: 1rem;
+  font-size: 1.2em;
+  border-radius: 5px;
+  width: 75px;
+}
+
+.container-RandomNumberGame input[type=number]::-webkit-inner-spin-button,
+.container-RandomNumberGame input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.container-RandomNumberGame {
+  position: relative;
+  border: 1px solid rgb(235, 190, 96);
+  border-radius: 5px;
+}
+
+
+.container-RandomNumberGame .divMsgToUser{
+  background-color: rgba(17, 76, 131, 0.89);
+  position: absolute;
+  left: 30%;
+  bottom: 10px;
+  border-radius: 5px;
+}
+
+.container-RandomNumberGame .divMsgToUser p{
+  padding: 5px;
+  margin: 10px;
+  color: white;
+}
+.container-RandomNumberGame .divMsgToUser p:empty{
+  display: none;
+}
