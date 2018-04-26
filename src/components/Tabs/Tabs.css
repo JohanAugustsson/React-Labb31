@@ -1,0 +1,64 @@
+.Tabs {
+    background-color: darkslategrey;
+    height: 400px;
+    width: 100%;
+}
+
+
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: inherit;
+    align-content: left;
+
+}
+
+
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    color: white;
+    font-size: 20px;
+}
+
+
+
+.tab button:hover {
+    background-color: green;
+}
+
+
+
+#tabOne {
+    background-color: blue;
+    height: 300px;
+    width: 100%;
+
+}
+
+
+
+#tabTwo {
+    background-color: red;
+    display: none;
+    height: 300px;
+    width: 100%;
+
+}
+
+
+
+#tabThree {
+    background-color: green;
+    display: none;
+    height: 300px;
+    width: 100%;
+
+}
