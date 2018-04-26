@@ -1,0 +1,15 @@
+.container-login Button{
+  padding: 5px;
+  margin: 1rem;
+  font-size: 1.2em;
+  border-radius: 5px;
+}
+
+.container-login .btnIn {
+  background-color: rgb(102, 221, 57);
+  color: white;
+}
+.container-login .btnOut {
+  background-color: rgb(245, 87, 83);
+  color: white;
+}
