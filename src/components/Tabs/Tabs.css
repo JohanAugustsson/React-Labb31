@@ -31,13 +31,13 @@
 
 
 .tab button:hover {
-    background-color: green;
+    background-color: lightseagreen;
 }
 
 
 
 #tabOne {
-    background-color: blue;
+    background-color: lightblue;
     height: 300px;
     width: 100%;
 
@@ -46,7 +46,7 @@
 
 
 #tabTwo {
-    background-color: red;
+    background-color: lightgreen;
     display: none;
     height: 300px;
     width: 100%;

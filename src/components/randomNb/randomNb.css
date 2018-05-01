@@ -21,7 +21,11 @@
 .container-RandomNumberGame {
   position: relative;
   border: 1px solid rgb(235, 190, 96);
+  background-color: darkslategrey;
   border-radius: 5px;
+    
+    
+    
 }
 
 

@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
+
 import '../Inputfield/Inputfield.css';
 import InputField from '../Inputfield/Inputfield.js';
+
+import '../NextLetter/NextLetter.css';
+import NextLetter from '../NextLetter/NextLetter.js';
+
 
 
 
@@ -33,6 +38,13 @@ class Tabs extends React.Component {
                <InputField/>
             )
         } 
+       let tabs2;
+                    if(this.state.page === 2) {
+            tabs2 = (
+               <NextLetter/>
+            )
+        }
+        
 
         return (
 
@@ -48,7 +60,7 @@ class Tabs extends React.Component {
 
                       </div>
 
-                    { tabs }
+                    { tabs } { tabs2 }
 
                     </div>
 
