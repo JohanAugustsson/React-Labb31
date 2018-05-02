@@ -23,11 +23,7 @@ class InputField extends Component {
 
         render() {
 
-        if(this.state.checked === true) {
-            console.log("sant")
-        } else {
-            console.log("falskt")
-        }
+      
 
 
 
