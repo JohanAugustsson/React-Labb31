@@ -24,7 +24,7 @@ class RandomNumberGame extends Component {
     let msgToUser;
 
     if( currentNumber > 0 ){
-      if( currentNumber ==  theMagicNumber ){
+      if( Number(currentNumber) ===  Number(theMagicNumber) ){
         msgToUser = "Grattis du gissade rätt!!"
       }else {
         this.setState({
@@ -59,7 +59,7 @@ class RandomNumberGame extends Component {
     let currentNumber = this.state.currentNumber;
     if(e.charCode < minNumber || e.charCode > maxNumber ){
       e.preventDefault();
-    } else if (e.charCode == minNumber ){         // Får ej börja med 0
+    } else if (Number(e.charCode) === Number(minNumber) ){         // Får ej börja med 0
       if(currentNumber.length < 1){
         e.preventDefault();
       }

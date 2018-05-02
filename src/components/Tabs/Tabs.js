@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import '../Inputfield/Inputfield.css';
 import InputField from '../Inputfield/Inputfield.js';
@@ -21,11 +21,11 @@ class Tabs extends React.Component {
 
 }
 
-    btnClick = (event,pageNumber) => { 
+    btnClick = (event,pageNumber) => {
         if(pageNumber === this.state.page) {
             pageNumber = 0
         }
-        console.log(pageNumber)
+        
             this.setState({
                 page: pageNumber
 
@@ -39,21 +39,21 @@ class Tabs extends React.Component {
             tabs = (
                <InputField/>
             )
-        } 
-      
+        }
+
                     if(this.state.page === 2) {
             tabs = (
                <NextLetter/>
             )
         }
-                
-       
+
+
                     if(this.state.page === 3) {
             tabs = (
                <RandomNumberGame/>
             )
         }
-        
+
 
         return (
 
@@ -69,7 +69,7 @@ class Tabs extends React.Component {
 
                       </div>
 
-                    { tabs } 
+                    { tabs }
 
                     </div>
 
