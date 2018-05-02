@@ -80,7 +80,7 @@ class RandomNumberGame extends Component {
 
     return(
       <div className="container-RandomNumberGame">
-        <p>Gissa på ett heltal mellan 1-99 </p>
+        <p>Gissa på ett heltal mellan 0-100 </p>
         <p>Antal gissningar gjorda: { this.state.numberOfguesses }</p>
         {/* <p>The magic number: { this.state.theMagicNumber}</p> */}
         {/* <p>Nummer som gissas: { this.state.currentNumber }</p> */}

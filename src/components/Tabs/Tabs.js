@@ -6,6 +6,8 @@ import InputField from '../Inputfield/Inputfield.js';
 import '../NextLetter/NextLetter.css';
 import NextLetter from '../NextLetter/NextLetter.js';
 
+import '../randomNb/randomNb.css';
+import  RandomNumberGame from '../randomNb/randomNb.js';
 
 
 
@@ -38,10 +40,17 @@ class Tabs extends React.Component {
                <InputField/>
             )
         } 
-       let tabs2;
+      
                     if(this.state.page === 2) {
-            tabs2 = (
+            tabs = (
                <NextLetter/>
+            )
+        }
+                
+       
+                    if(this.state.page === 3) {
+            tabs = (
+               <RandomNumberGame/>
             )
         }
         
@@ -60,7 +69,7 @@ class Tabs extends React.Component {
 
                       </div>
 
-                    { tabs } { tabs2 }
+                    { tabs } 
 
                     </div>
 

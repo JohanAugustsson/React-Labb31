@@ -5,7 +5,11 @@ class NextLetter extends React.Component {
     
     constructor(props) { 
         super(props);
-        this.state = { letters:''}
+        this.state = {  
+            
+            letters:'',
+            numberOfStep: 1
+        } 
 }
 
     nextLetter = (event) => {
@@ -17,11 +21,11 @@ class NextLetter extends React.Component {
            
             let nb = x.charCodeAt(0);
             
-            if(nb===122) {
-                nb = 97
-            } else {
-                nb++
-            }
+            nb = nb+ Number(this.state.numberOfStep)
+            
+            if(nb > 122) {
+                nb -= 26
+            } 
            
             let y = String.fromCharCode(nb);
             
@@ -30,12 +34,43 @@ class NextLetter extends React.Component {
             
         })
         
+        
+        
         this.setState({
             letters: newList
+            
             
         })
          // lettersToReplace.push(this.event.target.value )
     }
+    
+    handleNumber = (event) => {
+        
+        let number = event.target.value
+        
+        
+        if(number > 25 || number < 1) {
+            
+            alert("NOPE")
+            
+            
+        } else {
+            
+        
+            
+        
+        
+        
+        
+        this.setState({
+            numberOfStep: event.target.value,
+            letters: ''
+            
+            })
+        }
+        
+    }
+    
         render() {
           
         
@@ -47,9 +82,13 @@ class NextLetter extends React.Component {
 
         <div className="NextLetter">
             
-            <input type="text" id="inputField" onChange={this.nextLetter.bind(this)} ></input>
+            <input value={this.state.letters}  type="text" id="inputField" onChange={this.nextLetter.bind(this)} ></input>
                     <br/> <h3>Get the next letter!</h3>
                     <h4> { this.state.letters } </h4>
+
+
+                    <input value={this.state.numberOfStep} type="number" id="inputField2" onChange={this.handleNumber.bind(this)}></input>
+                        <h4> Skriv ett nummer från 1-25 </h4>
             
         </div>
 
